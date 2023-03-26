@@ -62,6 +62,11 @@ git remote add origin 'url'
 git push origin master
 ```
 
+- 깃허브 업로드 주소 확인 및 수정
+```
+git remote -v
+git remote set-url origin '변경할 주소 입력'
+```
 - 깃 브랜치 설정
 ```
 git branch
