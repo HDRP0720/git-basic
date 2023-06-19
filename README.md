@@ -45,11 +45,25 @@ git status
 git add .
 git commit -m '변경 사항'
 git log
+git log --oneline
 ```
 
 - 이전 버전으로 되돌리기
 ```
-$ git reset --hard HEAD~1
+# 가장 최근의 커밋 기록을 제거
+git reset HEAD^
+
+# 가장 최근의 커밋 기록을 1개 제거 (위와 동일)
+git reset --hard HEAD~1
+
+# 가장 최근의 커밋 기록을 2개 제거
+git reset --hard HEAD~2
+
+# 특정 커밋으로 복구 (특정 커밋 이후를 모두 제거)
+git reset --hard <commit id>
+
+# 원격지 commit 갱신
+git push -f origin <branch name>
 ```
 
 - 이전 버전으로 되돌리기를 취소
@@ -68,6 +82,7 @@ git push origin master
 git remote -v
 git remote set-url origin '변경할 주소 입력'
 ```
+
 - 깃 브랜치 설정
 ```
 git branch
