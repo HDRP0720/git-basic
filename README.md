@@ -43,7 +43,7 @@ git config --global --list
 ```
 git status
 git add .
-git commit -m '변경 사항'
+git commit -m '변경 사항' or git commit -m '메인 내용' -m '세부사항'
 git log
 git log --oneline
 ```
