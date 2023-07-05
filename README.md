@@ -41,9 +41,19 @@ git config --global --list
 
 - 버전 변경 여부, 변경점 등록, 변경내역추가, 기록을 확인합니다.
 ```
+# git 상태 확인
 git status
+
+# git 내용 추가
 git add .
+
+# git 커밋 추가
 git commit -m '변경 사항' or git commit -m '메인 내용' -m '세부사항'
+
+# git 커밋 내용 수정
+git commit --amend
+
+# git 커밋 확인
 git log
 git log --oneline
 ```
@@ -52,6 +62,9 @@ git log --oneline
 ```
 # 가장 최근의 커밋 기록을 제거
 git reset HEAD^
+
+# 커밋 삭제 및 복구 내역 확인
+git reflog
 
 # 가장 최근의 커밋 기록을 1개 제거 (위와 동일)
 git reset --hard HEAD~1
