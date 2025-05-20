@@ -51,7 +51,8 @@ git add .
 git commit -m '변경 사항' or git commit -m '메인 내용' -m '세부사항'
 
 # git 커밋 내용 수정
-git commit --amend
+git commit --amend  //이후 i로 입력모드 진입 → 메시지 수정 → esc → :wq 입력 후 엔터로 저장 및 종료 (vim editor 모드)
+git commit --amend -m '덮어쓸 커밋 메세지'
 
 # git 커밋 확인
 git log
